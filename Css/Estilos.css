@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600&family=Merriweather:wght@300;400&display=swap");
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather sans", sans-serif;
+}
+
+#home,
+#about,
+#portfolio,
+#skills,
+#contacto {
+  scroll-margin-top: 60px;
+}
+/* --------------------- HEADER --------------------- */
+header {
+    height: 60px;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+  }
+  
+  .navbar {
+    background: #ffffff;
+    padding: 10px 0;
+    width: 100%;
+    transition: 0.2s;
+  }
+  
+  .nav-menu-wrp {
+    display: none;
+  }
+  
+  .nav-logo-wrp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-logo {
+    font-size: 45px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-logo:hover {
+    color: inherit;
+  }
+  
+  .nav-logo:active {
+    color: #ff5722;
+  }
+  
+  .dropdown button:focus {
+    background: #ff5722;
+  }
+  
+  .dropdown {
+    background: #fff;
+  }
+  
+  .nav-menu {
+    margin: 0 auto;
+  }
+  
+  .nav-menu li {
+    display: inline-block;
+  }
+  
+  .nav-btn {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 15px;
+    color: #333;
+  }
+  
+  .nav-btn:hover {
+    color: #ff5722;
+  }
+/* --------------------- SPLASH --------------------- */
+.splash {
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(187, 187, 187, 0.7) 0%,
+        rgba(187, 187, 187, 0.2) 100%
+      ),
+      url(../Img/splash.jpeg) no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+
+}  
+.splash-cont{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile-pic img {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    width: 30%;
+  }
+  .main-title h1,
+.main-title h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.divider-md {
+    border:1px solid rgb(59, 58, 58);
+    width: 45%;
+    margin: 1rem auto;
+}
+.divider-splash {
+    width: 70%;
+    margin: 10px auto;
+    opacity: 80%;
+    border: 2px solid #ff5722;
+  }
+  .divider-sm {
+    width: 20%;
+    margin: 10px auto;
+    opacity: 80%;
+    border: 2px solid #ff5722;
+  }
+  .about-txt-wrp {
+    width: 100%;
+    margin: 30px auto;
+    padding: 0;
+  }
+  
+  .splash-txt {
+    font-family: "Merriweather", serif;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .btn-primary {
+    background: #ff5722;
+    border: none;
+    margin: 0 auto;
+  }
+  
+  .btn-primary:focus,
+  .btn-primary:active .btn-primary:hover {
+    background: #c0411a;
+  }
+  
+  .btn-secondary {
+    border: none;
+  }
+/* --------------------- ABOUT --------------------- */
+
+.about {
+    min-height: 65vh;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.divider-about {
+    border: 2px solid #ff5722;
+    width: 25%;
+    margin: 15px auto;
+    opacity: 80%;
+}
+.about-txt {
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 400;
+    text-align: justify;
+}  
+/* --------------------- PORTFOLIO --------------------- */
+
+.portfolio {
+  min-height: 100vh;
+  color: #fff;
+  overflow: hidden;
+  background: #455a64;
+  padding: 3rem 0;
+}
+
+.portfolio-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divider-portfolio {
+  border: 2px solid #ff5722;
+  width: 30%;
+  margin: 15px auto;
+  opacity: 80%;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30rem;
+  width: 100%;
+  border-radius: 1rem;
+  color: #333;
+  margin: 1.5rem auto;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio-card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  background: #fff;
+  width: 100%;
+  border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.portfolio-card img {
+  width: 40%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.377);
+  background: #fff;
+  padding: 0.5rem;
+}
+
+.project-about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  font-weight: 300;
+  font-size: 1rem;
+  background: #444;
+  color: #fff;
+  border-radius: 0 0 0.6rem 0.6rem;
+  text-align: center;
+}
+
+.card-txt-wrp {
+  padding: 1rem;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-about p {
+  width: 90%;
+  margin: 0rem auto;
+  text-align: left;
+}
+
+.btn-wrp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40%;
+  position: relative;
+  top: 0px;
+}
+
+.portfolio-card-btn {
+  background: #ff5722;
+  padding: 0.5rem 0.7rem;
+  margin: 0 auto;
+  width: 35%;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.portfolio-card-btn:hover,
+.portfolio-card-btn:active {
+  background: #ca6344;
+  color: #3f2b24;
+  transition: 0.3s;
+}
+/* --------------------- SKILLS --------------------- */
+
+.skills {
+  min-height: calc(100vh - 88px);
+  padding: 40px 0;
+}
+
+.divider-skills {
+  border: 2px solid #ff5722;
+  width: 55%;
+  margin: 15px auto;
+  opacity: 80%;
+}
+
+.skills-cont {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skill-icon {
+  margin: 1.5rem;
+}
+
+.skill-icon i {
+  font-size: 5rem;
+}
+
+.skill-icon p {
+  font-size: 1.5rem;
+}
+
+.fa-html5 {
+  color: #e34c26;
+}
+
+.fa-css3-alt {
+  color: #2965f1;
+}
+
+.fa-js-square {
+  color: #f0db4f;
+}
+
+.fa-react {
+  color: #61dbfb;
+}
+
+.fa-bootstrap {
+  color: #602c50;
+}
+
+
+/* --------------------- CONTACTO --------------------- */
+
+.about,
+.skills,
+.portfolio,
+.contacto {
+  scroll-margin-top: 87px;
+}
+.contacto {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #455a64;
+  color: #fff;
+}
+.fa-phone,
+.fa-envelope {
+  color: #ff5722;
+}
+/* --------------------- Footer --------------------- */
+.footer {
+  height: 15vh;
+  background: #444;
+  color: #fff;
+}
+
+.footer-link:hover {
+  color: #ff5722;
+}
+/* ------------------------------------------DESKTOP----------------------------------------------- */
+
+@media only screen and (min-device-width: 991px) {
+  header {
+    height: 98px;
+    width: 100%;
+    position: fixed;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .nav-menu-wrp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-logo:hover {
+    color: #ff5722;
+  }
+
+  .navbar {
+    background: transparent;
+  }
+
+  .navbar-scroll {
+    background: #fff;
+    box-shadow: 1px 4px 15px rgba(44, 44, 44, 0.527);
+    transition: 0.2s;
+  }
+
+  .divider-md {
+    width: 30%;
+  }
+
+  .divider-sm {
+    width: 5%;
+  }
+
+  .splash {
+    height: 100vh;
+    top: 0px;
+    z-index: 1;
+  }
+
+  .about {
+    padding: 0;
+  }
+
+  .about-txt-wrp {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+  .about-txt {
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .divider-splash {
+    width: 30%;
+  }
+
+  .divider-about {
+    width: 10%;
+  }
+
+  .divider-portfolio {
+    width: 16%;
+  }
+
+  .divider-skills {
+    width: 30%;
+  }
+
+  .profile-pic img {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    filter: grayscale(10%);
+    width: 20%;
+  }
+
+  .about {
+    height: 100vh;
+  }
+
+  .card-txt-wrp {
+    justify-content: flex-start;
+  }
+}
